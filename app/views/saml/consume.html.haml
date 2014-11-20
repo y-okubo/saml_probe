@@ -1,0 +1,11 @@
+%center
+  = image_tag 'approved.png', :style => 'margin: 50px'
+  %table{:border => "1"}
+    %tr
+      %th session[:userid]
+      %td= session[:userid]
+    %tr
+      %th session[:attributes]
+      %td= session[:attributes]
+  %br
+  = link_to 'Back', :controller => 'saml', :action => 'init'
