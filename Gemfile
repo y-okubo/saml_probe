@@ -38,3 +38,16 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'ruby-saml', git: 'git@github.com:onelogin/ruby-saml.git'
+gem 'rb-readline', '~> 0.4.2'
+gem 'haml-rails'
+gem 'erb2haml'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-coolline'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+  gem 'pry-rescue'
+end
